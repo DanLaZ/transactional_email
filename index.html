@@ -27,7 +27,98 @@
     /* mobile */
     @media only screen and (max-width: 600px){
       .container{
-        width: 100%;
+        width: 90% !important;
+      }
+      /*Header*/
+      .tatcha_header_logo {
+        width: 200px !important; 
+        height: 40px !important; 
+      }
+      .header_message {
+        font-size: 20px !important;
+      }
+      .shipping_message {
+        font-size: 14px !important;
+      }
+      .track_button {
+        width: 125px !important; 
+        height:33px !important;
+      }
+      /*Order/Tracking Numbers*/
+      .order_info p {
+        font-size: 14px ;
+        text-align: center !important;
+      }
+      /*Product List*/
+      .product_img {
+        width: 100px !important;
+        height: 80px !important;
+      }
+      .product_table span {
+        font-size: 12px;
+      }
+      .product_table p {
+        font-size: 12px;
+      }
+      .product_name {
+        font-size: 12px !important;
+      }
+    }
+    @media only screen and (max-width: 550px){
+      .container{
+        width: 400px !important;
+      }
+      /*Order/Tracking Numbers*/
+      .order_info p {
+        font-size: 10px ;
+        text-align: left !important;
+        padding: 0 !important;
+        padding: 10px !important;
+      }
+      /*Footer*/
+      .happiness_img {
+        height: 30px !important;
+        width: 65px !important;
+      }
+      .beautiful_faces_img {
+        height: 30px !important;
+        width: 100px !important;
+      }
+      .social_icon {
+        height: 20px !important;
+        width: 20px !important;
+      }
+    }
+    @media only screen and (max-width: 430px){
+      .container{
+        width: 320px !important;
+      }
+    }
+    @media only screen and (max-width: 340px){
+      .container{
+        width: 280px !important;
+      }
+      /*Product List*/
+      .product_table p {
+        font-size: 10px !important;
+      }
+      .product_table span {
+        font-size: 10px !important;
+      }
+      /*Price Total*/
+      .price_container p {
+        font-size: 10px !important;
+      }
+      /*Shipping Info*/
+      .shipping_info p {
+        font-size: 10px !important;
+      }
+      /*Footer*/
+      .footer_section p {
+        font-size: 10px !important;
+      }
+      .footer_section td {
+        padding: 0 2px !important;
       }
     }
   </style> 
@@ -45,10 +136,10 @@
               <table style="padding-bottom: 20px;" class="email_header" width="100%" align="center" cellspacing="0" cellpadding="0">
                 <tr>
                   <td style="text-align: center;">
-                    <img style="padding: 0; width: 310px; height:55px;" src="./assets/img/tatcha_logo.png" alt="Tatcha Logo">
-                    <h1 style="font-size: 28px; font-weight:300;">From Tatcha, with Love</h1>
-                    <p style="font-weight: 300; font-size: 16px; letter-spacing: 0.2px;">Your order has shipped! We hope you enjoy your new pieces.</p>
-                    <a href="https://www.tatcha.com/"><img style="padding: 5px 0 0 0; width: 175px; height:50px;" src="./assets/img/tatcha_button.png" alt="Tatcha button"></a>
+                    <img class="tatcha_header_logo" style="padding: 0; width: 310px; height:55px;" src="./assets/img/tatcha_logo.png" alt="Tatcha Logo">
+                    <h1 class="header_message" style="font-size: 28px; font-weight:300;">From Tatcha, with Love</h1>
+                    <p class="shipping_message" style="font-weight: 300; font-size: 16px; letter-spacing: 0.2px;">Your order has shipped! We hope you enjoy your new pieces.</p>
+                    <a href="https://www.tatcha.com/"><img class="track_button" style="padding: 5px 0 0 0; width: 175px; height:50px;" src="./assets/img/tatcha_button.png" alt="Tatcha button"></a>
                   </td>
                 </tr>
               </table>
@@ -84,7 +175,7 @@
           <!--Start of Product List-->
           <tr>
             <td>
-              <table style="padding-top: 15px; padding-bottom: 30px;" class="order_info" width="100%" align="center" cellspacing="0" cellpadding="0">
+              <table style="padding-top: 15px; padding-bottom: 30px;" class="product_table" width="100%" align="center" cellspacing="0" cellpadding="0">
                 <tr style="font-family: serif; font-weight: 300; font-size: 16px; text-transform: uppercase;">
                   <td>
                     <table style="padding-bottom: 25px;" width="70%" align="left" cellspacing="0" cellpadding="0">
@@ -115,8 +206,8 @@
                     <table width="70%" align="left" cellspacing="0" cellpadding="0">
                       <tr>
                         <td>
-                          <img style="width: 125px; height: 116px; float: left;" src="./assets/img/rice_polish.png" alt="Rice Polish">
-                          <p style="font-weight: 300; font-size: 17px; float: left; margin: auto; padding-top: 46px !important;">The Rice Polish: Deep</p>
+                          <img class="product_img" style="width: 125px; height: 116px; float: left;" src="./assets/img/rice_polish.png" alt="Rice Polish">
+                          <p class="product_name" style="font-weight: 300; font-size: 17px; float: left; margin: auto; padding-top: 46px !important;">The Rice Polish: Deep</p>
                         </td>
                       </tr>
                     </table>
@@ -141,8 +232,8 @@
                     <table width="70%" align="left" cellspacing="0" cellpadding="0">
                       <tr>
                         <td>
-                          <img style="width: 125px; height: 116px; float: left;" src="./assets/img/cleansing_oil.png" alt="Cleansing Oil">
-                          <p style="font-weight: 300; font-size: 17px; margin: auto; padding-top: 46px !important;">Pure One Step Camellia Cleansing Oil</p>
+                          <img class="product_img" style="width: 125px; height: 116px; float: left;" src="./assets/img/cleansing_oil.png" alt="Cleansing Oil">
+                          <p class="product_name" style="font-weight: 300; font-size: 17px; margin: auto; padding-top: 46px !important;">Pure One Step Camellia Cleansing Oil</p>
                         </td>
                       </tr>
                     </table>
@@ -201,7 +292,7 @@
                         </td>
                       </tr>
                     </table>
-                    <table class="price_amount_right" width="50%" align="left" cellspacing="0" cellpadding="0">
+                    <table class="price_amount_right" width="50%" align="right" cellspacing="0" cellpadding="0">
                       <tr>
                         <td style="text-align: right; padding-bottom: 5px;">
                           <span style="display:block; width:100%; border-top: 2px solid #d0d0d0; padding-bottom: 10px;"></span>
@@ -239,7 +330,7 @@
           <!--Start of Shipping Info-->
           <tr>
             <td>
-              <table width="100%" align="center" cellspacing="0" cellpadding="0" style="background: #f4f4fe;">
+              <table class="shipping_info" width="100%" align="center" cellspacing="0" cellpadding="0" style="background: #f4f4fe;">
                 <tr>
                   <td>
                     <p style="margin: 0; padding: 10px 0 0 10px; font-weight: 600;">Shipping Address:</p>
@@ -263,7 +354,7 @@
           <!--Start of Footer-->
           <tr>
             <td>
-              <table width="100%" align="center" cellspacing="0" cellpadding="0">
+              <table class="footer_section" width="100%" align="center" cellspacing="0" cellpadding="0">
                 <tr>
                   <td style="text-align: center;">
                     <p style="font-weight: 400; font-size: 15px;">Have a question or need help? Kindly view our <a href="https://www.tatcha.com/help-center.html" style="color: #6f55d2; text-decoration: none;">FAQs</a> or <a href="https://www.tatcha.com/contact-us.html" style="color: #6f55d2; text-decoration: none;">contact us</a> for more assistance.</p>
@@ -275,24 +366,24 @@
                     <table style="padding: 10px 0 10px 0;" width="100%" align="center" cellspacing="0" cellpadding="0">
                       <tr>
                         <td>
-                          <img style="height: 60px; width: 130px;" src="./assets/img/happiness_guarantee.png" alt="">
+                          <img class="happiness_img" style="height: 60px; width: 130px;" src="./assets/img/happiness_guarantee.png" alt="">
                         </td>
                         <td style="padding: 0 5px 0 5px;">
-                          <img style="height: 60px; width: 235px;" src="./assets/img/beautiful_faces.png" alt="">
+                          <img class="beautiful_faces_img" style="height: 60px; width: 235px;" src="./assets/img/beautiful_faces.png" alt="">
                         </td>
                         <td style="padding: 0 5px 0 5px;">
                           <a href="https://www.facebook.com/TatchaBeauty">
-                            <img style="height: 40px; width: 40px;" src="./assets/img/facebook_icon.png" alt="facebook icon">
+                            <img class="social_icon" style="height: 40px; width: 40px;" src="./assets/img/facebook_icon.png" alt="facebook icon">
                           </a>
                         </td>
                         <td style="padding: 0 10px 0 5px;">
                           <a href="https://www.instagram.com/tatcha/">
-                            <img style="height: 40px; width: 40px;" src="./assets/img/instagram_icon.png" alt="instagram icon">
+                            <img class="social_icon" style="height: 40px; width: 40px;" src="./assets/img/instagram_icon.png" alt="instagram icon">
                           </a>
                         </td>
                         <td style="padding: 0 5px 0 5px;">
                           <a href="https://twitter.com/tatcha_v">
-                            <img style="height: 40px; width: 40px;" src="./assets/img/twitter_icon.png" alt="twitter icon">
+                            <img class="social_icon" style="height: 40px; width: 40px;" src="./assets/img/twitter_icon.png" alt="twitter icon">
                           </a>
                         </td>
                       </tr>
